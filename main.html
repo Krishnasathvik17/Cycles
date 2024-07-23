@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menstrual Cycle Tracker</title>
+    <link rel="stylesheet" href="styles/cyclesstyling.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">PROFILE</a></li>
+                <li><a href="#">SETTINGS</a></li>
+                <li><a href="#">WELCOME</a></li>
+                <li><a href="#">LOG OUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="circle">
+            <div class="cycle-day">
+                <p>Day 15</p>
+                <p>Ovulation</p>
+            </div>
+        </div>
+        <div class="calendar-container">
+            <div class="month-nav">
+                <button id="prevMonth">&lt;</button>
+                <span id="monthYear">July 2024</span>
+                <button id="nextMonth">&gt;</button>
+            </div>
+            <table class="calendar">
+                <thead>
+                    <tr>
+                        <th>S</th>
+                        <th>M</th>
+                        <th>T</th>
+                        <th>W</th>
+                        <th>T</th>
+                        <th>F</th>
+                        <th>S</th>
+                    </tr>
+                </thead>
+                <tbody id="calendar-body">
+                    <!-- Calendar days will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+        <button id="todayBtn">TODAY</button>
+    </main>
+    <div id="logModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Log Details for Today</h2>
+            <!-- Sections for logging details -->
+            <div class="log-section">
+                <h3>Period Tracker</h3>
+                <button>Got period</button>
+                <button>Did not get period</button>
+            </div>
+            <div class="log-section">
+                <h3>Mood</h3>
+                <button>Happy</button>
+                <button>Tired</button>
+                <button>Sad</button>
+                <button>Angry</button>
+                <button>Anxious</button>
+                <button>Energetic</button>
+                <button>Depressed</button>
+            </div>
+            <div class="log-section">
+                <h3>Sex</h3>
+                <button>Did not have sex</button>
+                <button>Unprotected</button>
+                <button>Protected</button>
+                <button>Anal</button>
+            </div>
+            <div class="log-section">
+                <h3>Birth Control</h3>
+                <button>Took it</button>
+                <button>Took today's and yesterday's pill</button>
+                <button>Skipped it</button>
+            </div>
+            <div class="log-section">
+                <h3>Symptoms</h3>
+                <button>None</button>
+                <button>Cramps</button>
+                <button>Breast pain</button>
+                <button>Backache</button>
+                <button>Exhaustion</button>
+                <button>Acne</button>
+                <button>Headache</button>
+                <button>Cravings</button>
+                <button>Stomach pain</button>
+            </div>
+            <div class="log-section">
+                <h3>Physical Activity</h3>
+                <button>Did not exercise</button>
+                <button>Gym</button>
+                <button>Outdoors</button>
+                <button>Sports</button>
+                <button>Walking</button>
+                <button>Running</button>
+                <button>Biking</button>
+                <button>Swimming</button>
+                <button>Yoga</button>
+            </div>
+            <div class="log-section">
+                <h3>Water</h3>
+                <input type="number" placeholder="oz">
+            </div>
+        </div>
+    </div>
+    <script src="scripts/cyclesjsfile.js"></script>
+</body>
+</html>
