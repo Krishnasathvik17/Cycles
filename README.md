@@ -1,2 +1,0 @@
-# Cycles
-Period Tracker
